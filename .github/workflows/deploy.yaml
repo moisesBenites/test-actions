@@ -12,6 +12,9 @@ jobs:
       - name: Secret value
         run: echo "Secret value is ${{ secrets.TOKEN_SECRET }}"
 
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: setup
         uses: actions/setup-node@v4
         with:
