@@ -50,5 +50,6 @@ jobs:
       - name: Deploy
         run: echo "Deploying to production environment"
 
-      - name: Download artifact
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
